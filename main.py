@@ -22,11 +22,11 @@ def request_integer_input(message, minimum_value):
         try:
             value = int(input(message))
         except ValueError:
-            print("Digite apenas numeros inteiros.")
+            print("Only integers are allowed.")
             continue
 
         if value <= minimum_value:
-            print(f"O valor deve ser maior que {minimum_value}.")
+            print(f"Value must be greater than {minimum_value}.")
             continue
 
         return value
@@ -49,11 +49,11 @@ def request_integer_input(message, minimum_value):
 # - random_list_size = 1000
 ####################################################################################################
 ####################################################################################################
-seed_1 = request_integer_input("Informe a semente 1: ", 0)
-seed_2 = request_integer_input("Informe a semente 2: ", 0)
+seed_1 = request_integer_input("Enter seed 1: ", 0)
+seed_2 = request_integer_input("Enter seed 2: ", 0)
 simulation_time = 300
-server_count = request_integer_input("Informe a quantidade de servidores: ", 0)
-random_list_size = request_integer_input("Informe o tamanho da lista aleatoria: ", 999)
+server_count = request_integer_input("Enter the number of servers: ", 0)
+random_list_size = request_integer_input("Enter the size of pseudorandom list: ", 999)
 ####################################################################################################
 ####################################################################################################
 # --------------------------------------------------------------------------------------------------

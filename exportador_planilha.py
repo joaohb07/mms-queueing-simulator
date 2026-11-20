@@ -374,6 +374,6 @@ def export_spreadsheet(
         spreadsheet.writestr("xl/worksheets/sheet1.xml", sheet_xml)
         spreadsheet.writestr("xl/styles.xml", styles_xml)
 
-    print(f"Planilha exportada: {output_path}")
+    print(f"Exported spreadsheet: {output_path}")
 ####################################################################################################
 ####################################################################################################
